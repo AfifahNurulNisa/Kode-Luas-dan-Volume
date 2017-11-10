@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivbangundatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rr"/>
+            <TextView
+                android:id="@+id/judul"
+                android:layout_below="@+id/ivbangundatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bangun Datar"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_below="@id/judul"
+                android:id="@+id/tvdesk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Bangun datar adalah bangun dua dimensi yang hanya memiliki panjang dan lebar, yang dibatasi oleh garis lurus atau garis lengkung"/>
+            <Button
+                android:id="@+id/btnLuas"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0d3a71"
+                android:text="menghitung luas"
+                android:layout_below="@+id/tvdesk"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dd"
+                android:id="@+id/ivruang"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/btnLuas"
+                />
+            <TextView
+                android:id="@+id/judulRuang"
+                android:layout_below="@+id/ivruang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bangun Ruang"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_below="@id/judulRuang"
+                android:id="@+id/tvdeskRuang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Bangun ruang adalah bangun bangun tiga dimensi atau bangun yang mempunyai ruang yang dibatasi oleh sisi-sisinya"/>
+
+            <Button
+                android:id="@+id/btnVolume"
+                android:layout_below="@id/tvdeskRuang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="menghitung volume"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="#0d3a71"
+                android:layout_alignLeft="@+id/btnLuas"
+                android:layout_alignStart="@+id/btnLuas"
+                android:layout_marginBottom="21dp"
+                android:layout_marginTop="21dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

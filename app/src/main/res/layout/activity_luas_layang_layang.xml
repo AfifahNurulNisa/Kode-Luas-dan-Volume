@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.LuasLayangLayang">
+
+    <TextView
+        android:id="@+id/tvLuasLayang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="LUAS LAYANG-LAYANG"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Diagonal A"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tvDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Diagonal B"
+        android:textSize="20dp"
+        android:layout_below="@+id/etDA"
+        android:layout_alignLeft="@+id/tvDA"
+        android:layout_alignStart="@+id/tvDA" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Diagonal A"
+        android:id="@+id/etDA"
+        android:layout_alignBaseline="@+id/tvDA"
+        android:layout_alignBottom="@+id/tvDA"
+        android:layout_alignLeft="@+id/tvHasil"
+        android:layout_alignStart="@+id/tvHasil"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+    <EditText
+        android:id="@+id/etDB"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Diagonal B"
+        android:layout_alignBaseline="@+id/tvDB"
+        android:layout_alignBottom="@+id/tvDB"
+        android:layout_alignLeft="@+id/etDA"
+        android:layout_alignStart="@+id/etDA" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="hitung" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="HASIL"
+        android:textSize="20dp"/>
+</RelativeLayout>

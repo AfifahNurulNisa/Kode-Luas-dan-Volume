@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.VolumeBalok">
+
+    <TextView
+        android:id="@+id/tvVBalok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="VOLUME BALOK"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvPanjangBalok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Panjang"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tvLebarBalok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Lebar"
+        android:textSize="20dp"
+        android:layout_below="@+id/etPanjangBalok"
+        android:layout_alignLeft="@+id/tvPanjangBalok"
+        android:layout_alignStart="@+id/tvPanjangBalok" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi"
+        android:textSize="20dp"
+        android:layout_below="@+id/etLebarBalok"
+        android:layout_alignLeft="@+id/tvLebarBalok"
+        android:layout_alignStart="@+id/tvLebarBalok"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tvTinggiBalok" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Panjang"
+        android:id="@+id/etPanjangBalok"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignBaseline="@+id/tvPanjangBalok"
+        android:layout_alignBottom="@+id/tvPanjangBalok"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/etLebarBalok"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Lebar"
+        android:layout_alignBaseline="@+id/tvLebarBalok"
+        android:layout_alignBottom="@+id/tvLebarBalok"
+        android:layout_alignLeft="@+id/etPanjangBalok"
+        android:layout_alignStart="@+id/etPanjangBalok" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Tinggi"
+        android:layout_alignBaseline="@+id/tvTinggiBalok"
+        android:layout_alignBottom="@+id/tvTinggiBalok"
+        android:layout_alignLeft="@+id/etLebarBalok"
+        android:layout_alignStart="@+id/etLebarBalok"
+        android:id="@+id/etTinggiBalok" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hitung"
+        android:layout_below="@+id/etTinggiBalok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>

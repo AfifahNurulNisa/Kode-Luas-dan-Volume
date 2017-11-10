@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Luas dan Volume</string>
+    <string name="action_option">Keluar</string>
+    <string name="action_about">Tentang</string>
+    <string name="textview_deskripsi">Aplikasi android yang berfungsi untuk menghitung luas bangun datar dan volume bangun ruang dengan mudah.</string>
+    <string name="tv_pengembang">Pengembang</string>
+</resources>

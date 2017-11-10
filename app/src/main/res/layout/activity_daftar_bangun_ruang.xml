@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE3EAF4"
+    tools:context="com.luasvolume.luasdanvolume.daftarBangunRuang">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnKubus"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="17dp"
+            android:background="#FF98C0F0"
+            android:text="KUBUS"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/btnBalok"
+            android:layout_alignStart="@+id/btnBalok"
+            android:layout_alignRight="@+id/btnBalok"
+            android:layout_alignEnd="@+id/btnBalok" />
+
+        <Button
+            android:id="@+id/btnBalok"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnKubus"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FF98C0F0"
+            android:text="BALOK"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPrisma"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnBalok"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FF98C0F0"
+            android:text="PRISMA SEGITIGA"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnLimas"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnPrisma"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FF98C0F0"
+            android:onClick="lingkaran"
+            android:text="LIMAS SEGITIGA"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnTabung"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnLimas"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FF98C0F0"
+            android:text="TABUNG"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnBola"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnTabung"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FF98C0F0"
+            android:text="BOLA"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnKerucut"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnBola"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#FF98C0F0"
+            android:text="Kerucut"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

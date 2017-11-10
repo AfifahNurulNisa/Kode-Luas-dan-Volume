@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/navy"
+    tools:context="com.luasvolume.luasdanvolume.SplashScreen">
+
+    <ImageView
+        android:id="@+id/ivcube"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/cube"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp" />
+    <TextView
+        android:layout_below="@+id/ivcube"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFF4F4F5"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Luas dan Volume"/>
+</RelativeLayout>

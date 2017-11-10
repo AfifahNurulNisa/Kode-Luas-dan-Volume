@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.LuasJajarGenjang">
+
+    <TextView
+        android:id="@+id/tvLuasSegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="LUAS JAJAR GENJANG"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvAlasJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Alas"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tvTinggiJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Tinggi"
+        android:textSize="20dp"
+        android:layout_below="@+id/etAlasJ"
+        android:layout_alignLeft="@+id/tvAlasJ"
+        android:layout_alignStart="@+id/tvAlasJ" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Alas"
+        android:id="@+id/etAlasJ"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignBaseline="@+id/tvAlasJ"
+        android:layout_alignBottom="@+id/tvAlasJ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/etTinggiJ"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Tinggi"
+        android:layout_alignBaseline="@+id/tvTinggiJ"
+        android:layout_alignBottom="@+id/tvTinggiJ"
+        android:layout_alignLeft="@+id/etAlasJ"
+        android:layout_alignStart="@+id/etAlasJ" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="hitung" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="HASIL"
+        android:textSize="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.VolumeLimasSegitiga">
+
+    <TextView
+        android:id="@+id/tvVLimas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="VOLUME LIMAS"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvASLimas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Alas Segitiga"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/tvTSLimas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Tinggi Segitiga"
+        android:textSize="16dp"
+        android:layout_below="@+id/etALimas"
+        android:layout_alignLeft="@+id/tvASLimas"
+        android:layout_alignStart="@+id/tvASLimas" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi Limas"
+        android:textSize="16dp"
+        android:layout_below="@+id/etTSLimas"
+        android:layout_alignLeft="@+id/tvTSLimas"
+        android:layout_alignStart="@+id/tvTSLimas"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tvTLimas"/>
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:id="@+id/etALimas"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignBaseline="@+id/tvASLimas"
+        android:layout_alignBottom="@+id/tvASLimas"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/etTSLimas"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_alignBaseline="@+id/tvTSLimas"
+        android:layout_alignBottom="@+id/tvTSLimas"
+        android:layout_alignLeft="@+id/etALimas"
+        android:layout_alignStart="@+id/etALimas" />
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_alignBaseline="@+id/tvTLimas"
+        android:layout_alignBottom="@+id/tvTLimas"
+        android:layout_alignLeft="@+id/etTSLimas"
+        android:layout_alignStart="@+id/etTSLimas"
+        android:id="@+id/etTLimas" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hitung"
+        android:layout_below="@+id/etTLimas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+</RelativeLayout>

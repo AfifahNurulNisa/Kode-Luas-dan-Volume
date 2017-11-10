@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.VolumeKerucut">
+
+    <TextView
+        android:id="@+id/tvVolumeKerucut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="VOLUME KERUCUT"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvJariK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Jari-jari"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/tvTKerucut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Tinggi Kerucut"
+        android:textSize="16dp"
+        android:layout_below="@+id/etJariK"
+        android:layout_alignLeft="@+id/tvJariK"
+        android:layout_alignStart="@+id/tvJariK" />
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_alignBaseline="@+id/tvJariK"
+        android:layout_alignBottom="@+id/tvJariK"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:id="@+id/etJariK" />
+    <EditText
+        android:id="@+id/etTKerucut"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_alignBaseline="@+id/tvTKerucut"
+        android:layout_alignBottom="@+id/tvJariK"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="hitung" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="HASIL"
+        android:textSize="20dp"/>
+</RelativeLayout>

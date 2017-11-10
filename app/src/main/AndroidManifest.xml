@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luasvolume.luasdanvolume">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/s"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/s"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".daftarBangunDatar"
+            android:label="Daftar Bangun Datar" />
+        <activity
+            android:name=".LuasPersegi"
+            android:label="Persegi" />
+        <activity
+            android:name=".LuasPersegiPanjang"
+            android:label="Persegi Panjang" />
+        <activity
+            android:name=".LuasSegitiga"
+            android:label="Segitiga" />
+        <activity
+            android:name=".LuasLingkaran"
+            android:label="Lingkaran" />
+        <activity
+            android:name=".LuasJajarGenjang"
+            android:label="Jajar Genjang" />
+        <activity
+            android:name=".LuasTrapesium"
+            android:label="Trapesium" />
+        <activity
+            android:name=".LuasLayangLayang"
+            android:label="Layang-layang" />
+        <activity
+            android:name=".daftarBangunRuang"
+            android:label="Daftar Bangun Ruang" />
+        <activity
+            android:name=".VolumeKubus"
+            android:label="Kubus" />
+        <activity
+            android:name=".VolumeBalok"
+            android:label="Balok" />
+        <activity
+            android:name=".VolumePrismaSegitiga"
+            android:label="Prisma Segitiga" />
+        <activity
+            android:name=".VolumeLimasSegitiga"
+            android:label="Limas Segitiga" />
+        <activity
+            android:name=".VolumeTabung"
+            android:label="Tabung" />
+        <activity
+            android:name=".VolumeBola"
+            android:label="Bola" />
+        <activity
+            android:name=".VolumeKerucut"
+            android:label="Kerucut" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".aboutmyapp"></activity>
+    </application>
+
+</manifest>

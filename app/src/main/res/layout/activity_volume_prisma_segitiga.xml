@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.VolumePrismaSegitiga">
+
+    <TextView
+        android:id="@+id/tvVPrisma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="VOLUME PRISMA"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvAPrisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Alas Segitiga"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/tvTSPrisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Tinggi Segitiga"
+        android:textSize="16dp"
+        android:layout_below="@+id/etAPrisma"
+        android:layout_alignLeft="@+id/tvAPrisma"
+        android:layout_alignStart="@+id/tvAPrisma" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi Prisma"
+        android:textSize="16dp"
+        android:layout_below="@+id/etTSPrisma"
+        android:layout_alignLeft="@+id/tvTSPrisma"
+        android:layout_alignStart="@+id/tvTSPrisma"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tvTPrisma"/>
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:id="@+id/etAPrisma"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignBaseline="@+id/tvAPrisma"
+        android:layout_alignBottom="@+id/tvAPrisma"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/etTSPrisma"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_alignBaseline="@+id/tvTSPrisma"
+        android:layout_alignBottom="@+id/tvTSPrisma"
+        android:layout_alignLeft="@+id/etAPrisma"
+        android:layout_alignStart="@+id/etAPrisma" />
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_alignBaseline="@+id/tvTPrisma"
+        android:layout_alignBottom="@+id/tvTPrisma"
+        android:layout_alignLeft="@+id/etTSPrisma"
+        android:layout_alignStart="@+id/etTSPrisma"
+        android:id="@+id/etTPrisma" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hitung"
+        android:layout_below="@+id/etTPrisma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>

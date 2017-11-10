@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luasvolume.luasdanvolume.LuasTrapesium">
+
+    <TextView
+        android:id="@+id/tvLuasTrapesium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="LUAS TRAPESIUM"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvSisiA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Sisi A"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tvSisiB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Sisi B"
+        android:textSize="20dp"
+        android:layout_below="@+id/etSisiA"
+        android:layout_alignLeft="@+id/tvSisiA"
+        android:layout_alignStart="@+id/tvSisiA" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi"
+        android:textSize="20dp"
+        android:layout_below="@+id/etSisiB"
+        android:layout_alignLeft="@+id/tvSisiB"
+        android:layout_alignStart="@+id/tvSisiB"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketikkan Sisi Atas"
+        android:id="@+id/etSisiA"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignBaseline="@+id/tvSisiA"
+        android:layout_alignBottom="@+id/tvSisiA"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/etSisiB"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketikkan Sisi Bawah"
+        android:layout_alignBaseline="@+id/tvSisiB"
+        android:layout_alignBottom="@+id/tvSisiB"
+        android:layout_alignLeft="@+id/etSisiA"
+        android:layout_alignStart="@+id/etSisiA" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Ketikkan Tinggi"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/etSisiB"
+        android:layout_alignStart="@+id/etSisiB"
+        android:id="@+id/etTinggiT" />
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hitung"
+        android:layout_below="@+id/etTinggiT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+</RelativeLayout>
